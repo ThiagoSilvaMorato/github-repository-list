@@ -1,6 +1,6 @@
-import { RepositoryItem } from "./RepositoryItem";
+import { RepositoryItem } from "../RepositoryItem";
 
-import "../styles/repositories.scss";
+import "./style.scss";
 import { useState, useEffect } from "react";
 
 interface Repository {

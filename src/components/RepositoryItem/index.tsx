@@ -1,3 +1,5 @@
+import "./style.scss";
+
 interface RepositoryItemProps {
   repository: {
     name: string;
@@ -8,10 +10,10 @@ interface RepositoryItemProps {
 
 export function RepositoryItem(props: RepositoryItemProps) {
   return (
-    <section>
-      <li>{props.repository?.name}</li>
+    <li>
+      <strong>{props.repository?.name}</strong>
       <p>{props.repository.description}</p>
       <a href={props.repository.html_url}>Acessar repósitório</a>
-    </section>
+    </li>
   );
 }
