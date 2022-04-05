@@ -3,8 +3,6 @@ import { RepositoryItem } from "./RepositoryItem";
 import "../styles/repositories.scss";
 import { useState, useEffect } from "react";
 
-// http://api.github.com/orgs/rocketseat/repos
-
 export function RepositoryList() {
   const [repositories, setRepositories] = useState([]);
 
